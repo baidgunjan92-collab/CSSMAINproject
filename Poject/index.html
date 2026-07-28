@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>WELCOME TO SITE</title>
+    <link rel="stylesheet" href="./style.css">
+</header>
+
+</html>
+
+<body class="body">
+    <header class="header" id="header">
+        <div class="logo-text logo-container">
+            <a href="http://127.0.0.1:5500/Poject/index.html">
+                <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtafvGv-u_byZ_ippjFbcboz4bzolXIyJ29Zks5qa1zKCAYJKZNX1R2uI&s=10"
+                    width="50px">
+            </a>
+            <span style="font-size:30px">
+                <b style="color:rgb(1, 21, 12)"><i> Learn Coding </i> </b>
+            </span>
+        </div>
+        <nav align="right" class="navbar" id="navbar">
+            <a href="http://127.0.0.1:5500/Poject/about.html" class="nav-link about-btn">ABOUT</a>
+            <a href="http://127.0.0.1:5500/Poject/contact.html" class="nav-link nav-link:hover contact-btn">CONTACT</a>
+            <a href="http://127.0.0.1:5500/Poject/login.html" class="nav-link nav-link:hover login-btn">LOGIN</a>
+            <a href="http://127.0.0.1:5500/Poject/media.html" class="nav-link nav-link:hover media-btn">MEDIA</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span class=" hamburger-span hamburger open-span"></span><span
+                class=" hamburger-span hamburger open-span"></span><span
+                class=" hamburger-span hamburger open-span"></span>
+        </div>
+    </header>
+
+
+
+    <section class="container">
+        <table width=" 100%px" cellpadding="10">
+            <tr>
+                <td>
+                    <div class="hero-text">
+                        <h1 class="hero-title"> WELCOME TO OUR WEBSITE</h1>
+                        <p style="font-size:18px">
+                            This site is a project which is created by Gunjan who is pursuing B.Tech from BVCOE Delhi.
+                            <br><br>
+                            I believe that people should grow and learn on their own rather than relying on others.
+                            <br><br>
+                            Now I am helping others
+                        </p>
+                        <h2 class="section-title">OUR MISSION </h2>
+                        <p class="section-para"> My mission is to contribute best in technology and able to become a
+                            good engineer</p>
+                        <p> My mission is to contribute best in technology and able to become a good engineer</p>
+                        <p> My mission is to contribute best in technology and able to become a good engineer</p>
+                    </div>
+                </td>
+                <div class="hero-image-box">
+                    <td align="right">
+                        <img src="https://www.designveloper.com/wp-content/uploads/2022/07/html-developer-1024x608.png"
+                            width="500px" class="hero-image">
+                        <h2 style="text-align: center;" class="image-caption">FIGURE: HTML</h2>
+                </div>
+                </td>
+            </tr>
+
+
+        </table>
+    </section>
+    <section class="testimonial-section">
+        <h1 style="text-align: center;" class="testimonial-heading">LEARN AND HAVE FUN</h1>
+        <div class="testimonial-container">
+            <div class="testimonial-card testimonial-card:hover">
+                Learning and building projects are the part of
+                learning.I myself learn and enjoy
+                and build projects.
+                <br><br>
+                I enjoy learning with others as we get to learn alot of things from others who have worked on the
+                advanced
+                projects
+                <br><br>
+
+            </div>
+            <div class="testimonial-card testimonial-card:hover">
+
+                I enjoy learning with others as we get to learn alot of things from others who have worked on the
+                advanced
+                projects
+                <br><br>
+                and build something very musch creative and innovative and amazing.
+                <br><br>
+
+            </div>
+            <div class="testimonial-card testimonial-card:hover">
+                I enjoy learning with others as we get to learn alot of things from others who have worked on the
+                advanced
+                projects
+                <br>
+                and build something very musch creative and innovative and amazing.
+                <br><br>
+                Learning and building projects are the part of learning.I myself learn and enjoy
+                and build projects.
+                <br><br>
+            </div>
+            <div class="testimonial-card testimonial-card:hover">
+                I enjoy learning with others as we get to learn alot of things from others who have worked on the
+                advanced
+                projects
+                <br><br>
+                and build something very musch creative and innovative and amazing.
+                <br><br>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer class="footer footer-text">
+        <p align="center"> @2026 LEARN CODING </p>
+    </footer>
+    <script>
+        //hamburger//
+        const hamburger = document.getElementById("hamburger")
+        const navbar = document.getElementById("navbar")
+        hamburger.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+            hamburger.classList.toggle("open");
+        })
+
+        const header = document.getElementById("header")
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 20) {
+                header.classList.add("scrolled");
+            }
+            else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>

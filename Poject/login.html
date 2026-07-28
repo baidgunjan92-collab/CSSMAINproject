@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .body {
+            background: none;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0px 8px 20px rgb(129, 127, 127);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        label {
+            float: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #3d3c3c;
+        }
+
+        input[type="text"],
+        input[type="First Name"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3sec;
+        }
+
+        input[type="text"]:hover,
+        input[type="First Name"]:hover {
+            border-color: blue;
+        }
+
+        input[type="text"],
+        input[type="Last Name"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3sec;
+
+        }
+
+        input[type="text"]:hover,
+        input[type="Last Name"]:hover {
+            border-color: blue;
+        }
+
+        input[type="text"],
+        input[type="Email"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3sec;
+
+        }
+
+        input[type="text"]:hover,
+        input[type="Email"]:hover {
+            border-color: blue;
+        }
+
+        input[type="text"],
+        input[type="Password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3sec;
+
+        }
+
+        input[type="text"]:hover,
+        input[type="Password"]:hover {
+            border-color: rgb(47, 47, 216);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border-color: none;
+            background-color: rgb(46, 46, 201);
+            font-size: 18px;
+            color: aliceblue
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+
+        p {
+            margin-top: 15px;
+            color: #333;
+            font-size: 15px;
+        }
+
+        a {
+            color: blue;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px, 5%;
+            background-color: #fff;
+            border-bottom: 1px solid transparent;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: 0.3sec ease, box-shadow 0.3sec ease, border 0.3sec ease
+        }
+
+        .header.scrolled {
+            background-color: #fafafa;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0);
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font: size 1rem;
+            color: #333;
+            transition: 0.3sec ease;
+
+        }
+
+        .nav-link:hover {
+            color: blue;
+        }
+
+        .login-btn {
+            padding: 7px 16px;
+            background: rgb(90, 136, 19);
+            border-radius: 6px;
+            color: rgb(242, 245, 249);
+            font: weight 800;
+
+        }
+
+        .contact-btn {
+            padding: 7px 16px;
+            background: rgb(143, 106, 236);
+            border-radius: 6px;
+            color: rgb(251, 248, 249);
+            font: weight 800;
+
+        }
+
+        .about-btn {
+            padding: 7px 16px;
+            background: rgb(206, 152, 4);
+            border-radius: 6px;
+            color: rgb(242, 245, 249);
+            font: weight 800;
+
+        }
+
+        .media-btn {
+            padding: 7px 16px;
+            background: rgb(204, 81, 28);
+            border-radius: 6px;
+            color: rgb(242, 245, 249);
+            font: weight 800;
+        }
+
+        .footer {
+            padding: 10px;
+            -webkit-text-fill-color: rgb(237, 240, 244);
+            background-color: blueviolet;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="logo-text logo-container">
+            <a href="http://127.0.0.1:5500/Poject/index.html">
+                <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbtafvGv-u_byZ_ippjFbcboz4bzolXIyJ29Zks5qa1zKCAYJKZNX1R2uI&s=10"
+                    width="50px">
+            </a>
+            <span style="font-size:30px">
+                <b style="color:rgb(1, 21, 12)"><i> Learn Coding </i> </b>
+            </span>
+        </div>
+        <nav align="right" class="navbar" id="navbar">
+            <a href="http://127.0.0.1:5500/Poject/about.html" class="nav-link about-btn">ABOUT</a>
+            <a href="http://127.0.0.1:5500/Poject/contact.html" class="nav-link nav-link:hover contact-btn">CONTACT</a>
+            <a href="http://127.0.0.1:5500/Poject/login.html" class="nav-link nav-link:hover login-btn">LOGIN</a>
+            <a href="http://127.0.0.1:5500/Poject/media.html" class="nav-link nav-link:hover media-btn">MEDIA</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span class=" hamburger-span hamburger open-span"></span><span
+                class=" hamburger-span hamburger open-span"></span><span
+                class=" hamburger-span hamburger open-span"></span>
+        </div>
+    </header>
+    <form class="body">
+        <div class="container">
+            <h2><b>LOGIN</b></h2>
+            <br><br>
+            <label for="First name">First Name:</label>
+            <input type="text" placeholder="Enter First name" id="First name" class="input[type=First Name]"
+                required><br><br>
+            <label for="Last name">Last Name:</label>
+            <input type="text" placeholder="Enter Last name" id="Last name" required><br><br>
+            <label for="Email">Email:</label>
+            <input type="text" placeholder="Email" id="Email" required><br><br>
+            <label for="Password">Password:</label>
+            <input type="text" placeholder="Password" id="Password" required><br><br>
+
+            <p>New Account?<a href="http://127.0.0.1:5501/forms2.html/form2.html">signup</a></p>
+            <br><br>
+            <input type="submit" value="Login">
+        </div>
+    </form>
+
+    <hr>
+    <footer class="footer">
+        <p align="center"> @2026 LEARN CODING </p>
+    </footer>
+    <script>
+        //hamburger//
+        const hamburger = document.getElementById("hamburger")
+        const navbar = document.getElementById("navbar")
+        hamburger.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+            hamburger.classList.toggle("open");
+        })
+
+        const header = document.getElementById("header")
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 20) {
+                header.classList.add("scrolled");
+            }
+            else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>
